@@ -193,7 +193,7 @@
                         <div class="bg-blue-50 border border-blue-100 rounded-xl p-3 text-[11px] text-blue-800 leading-relaxed flex gap-2">
                             <i class="fa-solid fa-circle-info text-blue-600 mt-0.5 text-xs flex-shrink-0"></i>
                             <div>
-                                <span class="font-bold">Info Demo:</span> Gunakan Username: <strong class="underline cursor-pointer" onclick="fillDemoAdmin('panitia', 'pilkades')">panitia</strong> dan Password: <strong>pilkades</strong>.
+                                <span class="font-bold">Info Demo:</span> Gunakan Username: <strong class="underline cursor-pointer" onclick="fillDemoAdmin('admin', 'edudigital')">admin</strong> dan Password: <strong>edudigital</strong>.
                             </div>
                         </div>
 
@@ -585,7 +585,7 @@
         let supabaseClient = null;
         if (!IS_PREVIEW && SUPABASE_URL !== "SUPABASE_URL_ANDA_DI_SINI") {
             try {
-                supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+                supabaseClient = supabase.createClient(SUPAASE_URL, SUPABASE_ANON_KEY);
                 document.getElementById('preview-badge').classList.add('hidden');
                 document.getElementById('live-badge').classList.remove('hidden');
             } catch (err) {
@@ -981,7 +981,7 @@
                 }
             } else {
                 // Static Admin Setup
-                if (username === 'admin' && password === 'edudigital') {
+                if (username === 'panitia' && password === 'pilkades2026') {
                     isAdminValid = true;
                 }
             }
